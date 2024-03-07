@@ -1,0 +1,115 @@
+.item {
+  width: 100%;
+  background-color: #393e70;
+  float: left;
+  display: flex;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 10px 0 0;
+  .name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: white;
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+  .sub {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    float: left;
+    width: 100%;
+    color: #989abe;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  img {
+    width: 80px;
+    margin-right: 10px;
+    float: left;
+    height: 80px;
+  }
+}
+
+.info {
+  span {
+    font-size: 12px;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.message {
+  font-size: 12px;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background-color: #393e70;
+  box-sizing: border-box;
+  color: #989abe;
+}
+
+.like {
+  width: 100%;
+  padding: 10px 10px 15px 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  color: #989abe;
+  background-color: #393e70;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #989abe4d;
+  justify-content: space-between;
+  img {
+    width: 15px;
+    margin: 0 5px 0 0;
+    float: left;
+  }
+}
+
+.white {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bloco {
+  width: 45%;
+  float: left;
+  margin: 0 10px 0 0;
+  img {
+    width: 100%;
+  }
+  .name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #403b54;
+    text-align: left;
+  }
+  .sub {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #a0a1bb;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.container {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #393e70;
+  background-color: #fafaff;
+}

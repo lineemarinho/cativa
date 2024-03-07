@@ -1,0 +1,128 @@
+.detail {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #393e70;
+  font-size: 13px;
+  overflow: hidden;
+  border-radius: 0;
+  color: #989abe;
+  > b {
+    width: 100%;
+    float: left;
+    color: white;
+  }
+  > img {
+    float: right;
+  }
+}
+ul {
+  margin: 10px 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 90px;
+  border: 1px solid #f2f2f2;
+  padding: 5px 10px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.list-images {
+  margin: 10px 0 0 0;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  float: left;
+  > img {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px 0 0;
+    float: left;
+  }
+}
+
+.active {
+  background-color: #f8ce1a;
+  color: #4a4c7c;
+  border-color: #f8ce1a;
+}
+.add {
+  border: 1px solid #c1c2d8;
+  text-align: center;
+  height: 64px;
+  display: grid;
+
+  > b {
+    background-color: #393e70;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    width: 120px;
+    margin: 11px auto;
+    height: 24px;
+    line-height: 22px;
+  }
+}
+
+.container {
+  background-color: #fafaff;
+  width: 100%;
+  float: left;
+  height: auto;
+  padding: 0 0 50px 0;
+}
+
+.container-imagem {
+  width: 275px;
+  margin: -46px auto 10px;
+  position: relative;
+  display: block;
+}
+
+.like {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #989abe;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.border {
+  width: 100%;
+  float: left;
+  height: 80px;
+  background-color: #393e70;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: -40px;
+}
+
+.menu {
+  background-color: white;
+  border-radius: 10px;
+  width: 237px;
+  float: right;
+  position: absolute;
+  right: 10px;
+  z-index: 11111;
+  padding: 5px 10px 10px 10px;
+  margin: 17px -6px 0 0;
+  div {
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  img {
+    margin: 0 10px 0 0;
+  }
+}

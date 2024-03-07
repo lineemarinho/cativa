@@ -1,0 +1,46 @@
+.title {
+  color: #30356f;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  float: left;
+  margin: 20px 0;
+  line-height: 22px;
+  letter-spacing: 0em;
+  font-weight: bold;
+  text-align: left;
+  > b {
+    text-decoration: underline;
+    float: right;
+    font-weight: normal;
+    font-size: 11px;
+  }
+}
+.list {
+  border-bottom: 3px solid #d9deeb;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+.item {
+  width: 120px;
+  float: left;
+  margin: 0 10px 0 0;
+  .name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #403b54;
+    text-align: left;
+  }
+  .sub {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #a0a1bb;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

@@ -1,0 +1,154 @@
+<app-header></app-header>
+<div class="container" *ngIf="create">
+  <div class="title">Cadastre sua primeira moldura!</div>
+  <div class="image">
+    <img src="assets/images/foguete.png" alt="image" />
+  </div>
+  <div class="not">
+    Você ainda não possui<br />
+    nenhuma moldura
+  </div>
+  <div class="new" (click)="goStep1()">
+    <img src="assets/images/star.png" alt="image" /> Criar moldura
+  </div>
+</div>
+
+<div class="container" *ngIf="step1">
+  <div class="title">
+    Certo, agora vamos configurar<br />
+    sua coleção.
+  </div>
+
+  <div class="container-steps">
+    <div class="steps">
+      <div class="stepper-wrapper">
+        <div (click)="goStep1()" class="stepper-item completed">
+          <div class="step-counter">1</div>
+        </div>
+        <div (click)="goStep2()" class="stepper-item">
+          <div class="step-counter">2</div>
+        </div>
+        <div (click)="goStep3()" class="stepper-item">
+          <div class="step-counter">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form">
+    Titulo da coleção:
+    <input type="text" placeholder="Título da coleção" />
+
+    Endereço que você vai divulgar:
+    <div class="dominio">
+      <div class="cativame">cativa.me/</div>
+      <input type="text" placeholder="titulo-da-colecao" />
+    </div>
+
+    Duração:
+    <input type="date" placeholder="Duração" />
+    <div class="new" (click)="goStep2()">
+      <img src="assets/images/star.png" alt="image" /> Criar moldura
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="step2">
+  <div class="title">
+    Certo, agora vamos configurar<br />
+    sua coleção.
+  </div>
+  <div class="container-steps">
+    <div class="steps">
+      <div class="stepper-wrapper">
+        <div (click)="goStep1()" class="stepper-item completed">
+          <div class="step-counter">1</div>
+        </div>
+        <div (click)="goStep2()" class="stepper-item completed">
+          <div class="step-counter">2</div>
+        </div>
+        <div (click)="goStep3()" class="stepper-item">
+          <div class="step-counter">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form">
+    Selecione ou arraste o(s) arquivo(s)
+    <div class="box">
+      Tamanho: 1080 x 1080px
+
+      <div class="image">
+        <img src="assets/images/click.png" alt="image" />
+      </div>
+
+      <label for="fileInput" class="file-label">
+        <b>escolha um arquivo</b>
+      </label>
+      <input type="file" id="fileInput" style="display: none" />
+    </div>
+    <div class="images">
+      <div class="update">
+        <div class="clear">
+          <img src="assets/images/clear.png" alt="image" />
+        </div>
+        <img src="assets/images/update.png" alt="image" />
+      </div>
+      <div class="update">
+        <img src="assets/images/update.png" alt="image" />
+      </div>
+      <div class="update">
+        <img src="assets/images/update.png" alt="image" />
+      </div>
+    </div>
+    <div class="new" (click)="goStep3()">
+      <img src="assets/images/star.png" alt="image" />Ir para último passo
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="step3">
+  <div class="title">
+    Falta pouco para começar a<br />
+    divulgar sua campanha!
+  </div>
+  <div class="container-steps">
+    <div class="steps">
+      <div class="stepper-wrapper">
+        <div (click)="goStep1()" class="stepper-item completed">
+          <div class="step-counter">1</div>
+        </div>
+        <div (click)="goStep2()" class="stepper-item completed">
+          <div class="step-counter">2</div>
+        </div>
+        <div (click)="goStep3()" class="stepper-item completed">
+          <div class="step-counter">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="information">
+      <b> Titulo:</b> Niver do Heitor<br />
+      <b> Link de divulgação: </b>cativa.me/niver-edu-34<br />
+      <b>Duração:</b> até 11/08/2023<br />
+    </div>
+
+    <div class="images">
+      <div class="update">
+        <img src="assets/images/update.png" alt="image" />
+      </div>
+      <div class="update">
+        <img src="assets/images/update.png" alt="image" />
+      </div>
+      <div class="update">
+        <img src="assets/images/update.png" alt="image" />
+      </div>
+    </div>
+    <div class="new" (click)="goCreate()">
+      <img src="assets/images/star.png" alt="image" /> Publicar agora!
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

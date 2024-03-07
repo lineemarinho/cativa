@@ -1,0 +1,61 @@
+.publicar {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  padding: 10px 0;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  background-color: #4b8abd;
+}
+.logo {
+  width: 100px;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  width: 100%;
+  float: left;
+  color: #393e70;
+  padding: 10px 0;
+  list-style-type: none;
+  cursor: pointer;
+  font-weight: bold;
+  gap: 10px;
+  text-align: left;
+  img {
+    float: right;
+    transform: rotate(-90deg);
+    width: 8px;
+  }
+}
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  border-top: 1px solid #d9deeb;
+}
+.rede-social {
+  display: flex;
+}
+.direitos {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #989abe;
+  font-size: 12px;
+}
+.rede-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #dedede;
+  width: 100%;
+}

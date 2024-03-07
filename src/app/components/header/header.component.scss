@@ -1,0 +1,20 @@
+.header {
+  background-color: #393e70;
+  color: white;
+  width: 100%;
+  display: flex;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+  .menu {
+    float: left;
+    margin-top: 5px;
+    img {
+      width: 20px;
+    }
+  }
+  img {
+    width: 102.97px;
+    margin: 0 auto;
+  }
+}

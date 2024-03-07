@@ -1,0 +1,49 @@
+<app-header-category (click)="home()"></app-header-category>
+<div class="container">
+  <div class="detail">
+    <b>Tô com Braide</b>
+    por: Eduardo Braide
+    <img
+      src="assets/images/menu-add.png"
+      (click)="openMenu()"
+      style="margin-top: -10px"
+      alt="logo"
+    />
+
+    <div class="menu" *ngIf="menu">
+      <div (click)="navigate('manifest')">
+        <img src="assets/images/menu1.png" alt="logo" /> Ler manifesto
+      </div>
+      <div (click)="navigate('collections')">
+        <img src="assets/images/menu2.png" alt="logo" />Coleções do autor
+      </div>
+      <div (click)="navigate('collections')">
+        <img src="assets/images/menu3.png" alt="logo" />Outras coleções
+      </div>
+    </div>
+
+    <div class="list-category">
+      <ul>
+        <li class="active">Feed</li>
+        <li>Stories</li>
+        <li>Perfil</li>
+      </ul>
+      <div class="list-images">
+        <img src="assets/images/imagem.png" alt="logo" />
+        <img src="assets/images/imagem.png" alt="logo" />
+        <img src="assets/images/imagem.png" alt="logo" />
+        <img src="assets/images/imagem.png" alt="logo" />
+      </div>
+    </div>
+  </div>
+  <div class="border"></div>
+  <div class="container-imagem">
+    <img src="assets/images/imagem-add.png" alt="logo" />
+    <div class="add" (click)="add()"><b>Escolher foto</b></div>
+    <div class="like">
+      <div><img src="assets/images/like.png" alt="logo" /> 135 usaram</div>
+      <div><img src="assets/images/shared.png" alt="logo" /> Compartilhar</div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
